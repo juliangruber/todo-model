@@ -9,14 +9,14 @@ var doc = new Doc();
 
 var ToDo = require('todo-model')(doc);
 
-var Tasks = todo.Tasks;
+var Tasks = ToDo.Tasks;
 
 Tasks.find().forEach(function (task) {
   console.log(task.name());
 });
 
-var Lists = todo.Lists;
-var Users = todo.Users;
+var Lists = ToDo.Lists;
+var Users = ToDo.Users;
 ```
 
 ## Tasks
