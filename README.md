@@ -1,6 +1,24 @@
 
 # Todo Model
 
+## Usage
+
+```js
+var Doc = require('crdt').Doc;
+var doc = new Doc();
+
+var ToDo = require('todo-model')(doc);
+
+var Tasks = todo.Tasks;
+
+Tasks.find().forEach(function (task) {
+  console.log(task.name());
+});
+
+var Lists = todo.Lists;
+var Users = todo.Users;
+```
+
 ## Tasks
 
 ### Tasks(doc)
