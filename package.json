@@ -1,0 +1,31 @@
+{
+  "name": "todo-model",
+  "description": "Todo Models",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/juliangruber/todo-model.git"
+  },
+  "homepage": "https://github.com/juliangruber/todo-model",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "dependencies": {
+    "debug": "~0.7.2"
+  },
+  "devDependencies": {
+    "tape": "*",
+    "crdt": "~3.5.1"
+  },
+  "keywords": [
+    "todo",
+    "tasks"
+  ],
+  "author": {
+    "name": "Julian Gruber",
+    "email": "mail@juliangruber.com",
+    "url": "http://juliangruber.com"
+  },
+  "license": "MIT"
+}
