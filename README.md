@@ -11,6 +11,8 @@ var ToDo = require('todo-model')(doc);
 
 var Tasks = ToDo.Tasks;
 
+Tasks.add('get milk');
+
 Tasks.find().forEach(function (task) {
   console.log(task.name());
 });
