@@ -51,6 +51,10 @@ Get an `Array` of tasks that block `Task` or mark `Task` as being blocked by `[t
 
 Get or set a task's `deleted` state.
 
+### Task#ts()
+
+Get the timestamp of when the task was inserted.
+
 ## Lists
 
 ## Users

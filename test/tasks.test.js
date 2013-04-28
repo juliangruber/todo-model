@@ -112,3 +112,11 @@ test('task.name()', function (t, Tasks) {
   t.equal(Tasks.add('foo').name(), 'foo', 'name set');
   t.end();
 });
+
+test('task.ts()', function (t, Tasks) {
+  var task = Tasks.add('foo');
+  t.equal(typeof task.ts(), 'number');
+  t.ok(task.ts() < Date.now() + 1000);
+  t.ok(task.ts() > Date.now() - 1000);
+  t.end();
+});
