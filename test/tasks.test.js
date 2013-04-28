@@ -20,6 +20,23 @@ test('Tasks.find()', function (t, Tasks) {
   t.end();
 });
 
+test('Tasks.findStream()', function (t, Tasks) {
+  t.plan(2);
+
+  Tasks.add('foo');
+
+  var i = 0;
+  Tasks.findStream().on('data', function (task) {
+    ++i == 1
+      ? t.equal(task.name(), 'foo')
+      : t.equal(task.name(), 'bar');
+  });
+
+  process.nextTick(function () {
+    Tasks.add('bar');
+  });
+});
+
 test('Tasks.add(name)', function (t, Tasks) {
   Tasks.add('foo');
   tasks = Tasks.find();

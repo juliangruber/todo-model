@@ -23,19 +23,33 @@ var Users = ToDo.Users;
 
 ## Tasks
 
-### Tasks(doc)
-
 ### Tasks#find()
+
+Returns an `Array` of all tasks currently in the document.
+
+### Tasks#findStream()
+
+Returns a readable `Stream` that emits already stored and newly added tasks.
 
 ### Tasks#add(name)
 
+Add a task named `name`. Returns the task object.
+
 ### Task#name([name])
+
+Get or set a task's `name`.
 
 ### Task#done([done])
 
+Get or set a task's `done` state.
+
 ### Task#blockedBy([task])
 
+Get an `Array` of tasks that block `Task` or mark `Task` as being blocked by `[task]`.
+
 ### Task#deleted([deleted])
+
+Get or set a task's `deleted` state.
 
 ## Lists
 
