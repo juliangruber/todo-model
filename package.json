@@ -12,11 +12,11 @@
     "test": "tape test/*.js"
   },
   "dependencies": {
-    "debug": "~0.7.2"
+    "debug": "~2.3.3"
   },
   "devDependencies": {
     "tape": "*",
-    "crdt": "~3.5.1"
+    "crdt": "~3.6.4"
   },
   "keywords": [
     "todo",
